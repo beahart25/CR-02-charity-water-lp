@@ -152,15 +152,34 @@
         margin-top: 0;
       }
     }
+
+    /* New styles for the logo in the top left corner */
+    .logo-container {
+      position: absolute;
+      top: 16px;
+      left: 32px;
+      z-index: 3;
+    }
+
+    .logo-img {
+      height: 40px;
+      width: auto;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Logo at the top left corner -->
+  <div class="logo-container">
+    <!-- The logo image. The alt text describes the image for accessibility. -->
+    <img src="img/charity-water-charity-water-logo-png-Photoroom.png" alt="Charity Water Logo" class="logo-img">
+  </div>
 
   <!-- Header -->
   <div class="header">
     <div class="logo">
       <!-- For students: Place your logo image inside the 'images' folder and update the src below -->
-      <img src="images/charity-water-logo.png" alt="Charity: Water Logo" />
+      <img src="images/charity-water-logo.png" alt="" />
     </div>
     <button class="connect-btn">Connect To The Cause →</button>
   </div>

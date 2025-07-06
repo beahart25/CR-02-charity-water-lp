@@ -1,0 +1,13 @@
+/* Style for the logo container */
+.logo-container {
+    /* Place the logo at the top left with some padding */
+    position: absolute; /* Take the logo out of normal flow */
+    top: 10px;          /* Distance from the top */
+    left: 10px;         /* Distance from the left */
+}
+
+/* Style for the logo image */
+.logo-img {
+    width: 100px;       /* Set a simple width for the logo */
+    height: auto;       /* Keep the image aspect ratio */
+}
