@@ -102,6 +102,8 @@
       margin-bottom: 8px; /* Move subheading even closer to heading */
       line-height: 1.15;
       color: var(--text-dark);
+      /* Add a darker shadow to the heading for better visibility */
+      text-shadow: 2px 2px 4px #555555;
     }
 
     .hero p {
@@ -129,13 +131,14 @@
     }
 
     .hero-image img {
-      /* Make the image larger for students */
-      max-width: 400px; /* Set a larger max width */
+      /* Make the image a little bigger and keep it close to the heading */
+      max-width: 400px; /* Slightly bigger size */
       width: 100%; /* Make image fill its container */
       height: auto;
       border: 4px solid #003366; /* Changed border color to dark blue */
       border-radius: 8px;
-      margin-top: 20px;
+      margin-top: 0; /* No space above image */
+      margin-left: -24px; /* Move image closer to the text */
     }
 
     @media (min-width: 768px) {
@@ -144,12 +147,13 @@
       }
 
       .hero-image {
-        max-width: 50%;
-        margin-left: 32px;
+        max-width: 55%; /* Allow image to take a bit more space */
+        margin-left: 0; /* Remove extra space between text and image */
       }
 
       .hero-image img {
         margin-top: 0;
+        margin-left: -24px; /* Keep image closer on larger screens */
       }
     }
 
