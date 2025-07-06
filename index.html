@@ -21,6 +21,18 @@
       color: var(--text-dark); /* Set default text color */
     }
 
+    /* Remove the pink triangle styles */
+    /* .corner-triangle {
+      ...triangle styles...
+    } */
+
+    /* Make sure content stays above the triangle */
+    .header,
+    .hero {
+      position: relative;
+      z-index: 2;
+    }
+
     /* Header */
     .header {
       display: flex;
@@ -37,11 +49,16 @@
       font-size: 1.4rem;
       font-weight: bold;
       color: var(--text-dark); /* Make logo text dark */
+      display: flex;
+      align-items: center; /* Center image and text vertically */
+      gap: 10px; /* Space between image and text */
     }
 
-    .logo span {
-      color: var(--orange);
-      margin-right: 6px;
+    .logo img {
+      /* Style for the logo image */
+      height: 40px; /* Set a simple height for the logo */
+      width: auto;
+      vertical-align: middle;
     }
 
     .connect-btn {
@@ -139,7 +156,10 @@
 
   <!-- Header -->
   <div class="header">
-    <div class="logo"><span>☀️</span>charity: water</div>
+    <div class="logo">
+      <!-- Only show the logo image, remove the text -->
+      <img src="cw_logo-2.png" alt="Charity: Water Logo" />
+    </div>
     <button class="connect-btn">Connect To The Cause →</button>
   </div>
 
@@ -154,6 +174,9 @@
       <img src="https://via.placeholder.com/400x500" alt="Children at water pump" />
     </div>
   </section>
+
+  <!-- Remove the pink triangle element -->
+  <!-- <div class="corner-triangle"></div> -->
 
 </body>
 </html>
