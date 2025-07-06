@@ -69,10 +69,20 @@
       border-radius: 6px;
       cursor: pointer;
       font-weight: bold;
+      /* Add a shadow to make the button look 3D */
+      box-shadow: 0 4px 0 #5f93a3;
+      /* Add a smooth transition for the shadow and movement */
+      transition: box-shadow 0.1s, transform 0.1s;
     }
 
     .connect-btn:hover {
       background-color: #5f93a3;
+    }
+
+    .connect-btn:active {
+      /* Move the button down a little and reduce the shadow when clicked */
+      box-shadow: 0 2px 0 #5f93a3;
+      transform: translateY(2px);
     }
 
     /* Hero Section */
@@ -123,11 +133,21 @@
       border-radius: 8px;
       cursor: pointer;
       align-self: center;
+      /* Add a shadow to make the button look 3D */
+      box-shadow: 0 6px 0 #5f93a3;
+      /* Add a smooth transition for the shadow and movement */
+      transition: box-shadow 0.1s, transform 0.1s;
       /* No margin-bottom needed since it's the last element */
     }
 
     .donate-btn:hover {
       background-color: #5f93a3;
+    }
+
+    .donate-btn:active {
+      /* Move the button down a little and reduce the shadow when clicked */
+      box-shadow: 0 3px 0 #5f93a3;
+      transform: translateY(3px);
     }
 
     .hero-image img {
