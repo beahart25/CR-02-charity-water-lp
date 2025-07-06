@@ -104,7 +104,8 @@
       /* Center all content inside hero-text */
       display: flex;
       flex-direction: column;
-      align-items: flex-start; /* Default: left align */
+      align-items: center; /* Center items horizontally */
+      text-align: center;  /* Center text inside the box */
     }
 
     .hero h1 {
@@ -114,12 +115,14 @@
       color: var(--text-dark);
       /* Add a darker shadow to the heading for better visibility */
       text-shadow: 2px 2px 4px #555555;
+      /* Text is centered by parent */
     }
 
     .hero p {
       font-size: 1.5rem;
       margin-bottom: 32px; /* Keep space before the button */
       color: var(--text-dark);
+      /* Text is centered by parent */
     }
 
     .donate-btn {
