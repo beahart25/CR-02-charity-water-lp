@@ -15,7 +15,9 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: var(--background);
+      /* Set the whole page background to orange */
+      background-color: var(--orange);
+      color: var(--text-dark); /* Set default text color */
     }
 
     /* Header */
@@ -25,11 +27,15 @@
       align-items: center;
       padding: 16px 32px;
       background-color: white;
+      margin-left: 0;
+      width: 100%;
+      box-sizing: border-box; /* Make sure padding doesn't overflow */
     }
 
     .logo {
       font-size: 1.4rem;
       font-weight: bold;
+      color: var(--text-dark); /* Make logo text dark */
     }
 
     .logo span {
@@ -39,7 +45,7 @@
 
     .connect-btn {
       background-color: var(--light-blue);
-      color: #000;
+      color: var(--text-dark); /* Button text dark */
       padding: 10px 16px;
       border: none;
       border-radius: 6px;
@@ -55,42 +61,49 @@
     .hero {
       display: flex;
       flex-wrap: wrap;
+      margin-left: 0;
       background-color: var(--orange);
-      color: white;
-      padding: 40px 32px;
+      color: var(--text-dark); /* All text in hero is dark */
+      /* Reduce top padding to move hero closer to header */
+      padding: 16px 32px 40px 32px; /* Less space on top, keep bottom padding */
       justify-content: space-between;
       align-items: center;
-      /* Make the hero section fill the whole browser window */
       min-height: 100vh;
     }
 
     .hero-text {
       max-width: 500px;
+      /* Center all content inside hero-text */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Default: left align */
     }
 
     .hero h1 {
-      /* Make the main heading even larger */
       font-size: 4rem;
-      margin-bottom: 28px; /* Add more space below the heading */
+      margin-bottom: 8px; /* Move subheading even closer to heading */
       line-height: 1.15;
+      color: var(--text-dark);
     }
 
     .hero p {
-      /* Make the subheading larger and add more space below */
       font-size: 1.5rem;
-      margin-bottom: 36px; /* More space before the button */
+      margin-bottom: 32px; /* Keep space before the button */
+      color: var(--text-dark);
     }
 
     .donate-btn {
       /* Make the button bigger to match the larger text */
       background-color: var(--light-blue);
-      color: #000;
+      color: var(--text-dark); /* Button text dark */
       padding: 22px 38px;
       font-size: 1.3rem;
       font-weight: bold;
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      align-self: center;
+      /* No margin-bottom needed since it's the last element */
     }
 
     .donate-btn:hover {
